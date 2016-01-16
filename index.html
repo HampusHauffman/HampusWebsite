@@ -27,6 +27,10 @@
 					  	<button class = "menuButton" id = "menuButton4" type = "button">
 					  		<spam class="fa fa-code"></spam>
 					  	</button></li>
+					  <li class = "menuItem">
+					  	<button class = "menuButton" id = "menuButton5" type = "button">
+					  		<spam class="fa fa-times-circle"></spam>
+					  	</button></li>
 					</ul>
 
 				</div>
@@ -34,19 +38,70 @@
 
 				</div>
 
-				<div id = "textField">
+				<div hidden id = "textField">
 					<p id = "loremIpsum">
 
 					</p>
 
 				</div>
+
+				<p hidden id = "homeText">
+					Welcome To Home
+				</p>
+				<p hidden id = "imgText">
+					Welcome To img
+				</p>
+				<p hidden id = "infoText">
+					Welcome To info
+				</p>
+				<p hidden id = "codeText">
+					
+				</p>
+
 		</body>
 
 		<script>
 		$(document).ready(function(){
+			$("textField").slideUp(1);
+			$(".menuButton").on("click", function(){
+				var menuButtonVar = $(this).attr("id");
 
-			$("#textField").slideUp(5000).delay(1000).slideDown(5000);
+					if(menuButtonVar == "menuButton1"){
+						var textDisp = $("#homeText").text();
 
+					}else if(menuButtonVar == "menuButton2"){
+						var textDisp = $("#imgText").text();
+
+					}else if(menuButtonVar == "menuButton3"){
+						var textDisp = $("#infoText").text();
+						
+					}else if(menuButtonVar == "menuButton4"){
+						var textDisp = $("#codeText").text();
+						
+					}else if(menuButtonVar == "menuButton5"){
+						var textDisp = $("#stop").text();
+						
+					}
+
+					if(menuButtonVar == "menuButton5"){
+						$("#textField").slideUp(500);
+					} else{
+
+						$("#textField").slideUp(500).delay(500);
+						function newText(){
+							$("#loremIpsum").html(textDisp);
+						}
+						$(function(){
+							setTimeout(newText,500);
+						});
+						$("#textField").slideDown(500);
+
+						}
+					
+					
+				var menuButtonVar2 = menuButtonVar;
+
+			});
 
 		});
 		</script>
