@@ -22,12 +22,38 @@ body{
 	margin-top: 12%;
 	font-family: Vonique;
 	word-spacing: 20px;
+	text-shadow: 0px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.fa-home{
+	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+.fa-image{
+	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+.fa-info-circle{
+	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+.fa-code{
+	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+.fa-times-circle{
+	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
 
 }
 
 #menu{
 	text-align: center;
 	color: white;
+	margin: auto;
+	max-width: 900px;
+	padding-bottom: 15px;
+
 
 }
 
@@ -49,25 +75,27 @@ body{
 
 #menu ul li{
 	display: inline;
+	
 }
 
 #whiteLine{
 	height: 10px;
-	margin-top: 1%;
-	margin-left: 12%;
-	margin-right: 12%;
+	max-width: 700px;
+	margin: auto;
 	background-color: white;
+	box-shadow:  0px 6px  rgba(0, 0, 0, 0.3);
+
 }
 
 #textField{
-	font-size: 17px;
+	font-size: 19px;
 	color: white;
-	background-color: rgba(0,0,0,0.4);
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3));
 
-	margin-left: 15%;
-	margin-right: 15%;
+	max-width: 640px;
+	margin: auto; 
 	overflow-y: auto;
-	height: 500px;
+	max-height: 600px;
 }
 
 #loremIpsum{
