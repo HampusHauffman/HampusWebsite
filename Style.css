@@ -19,7 +19,7 @@ body{
 	text-align: center;
 	color: white;
 	font-size: 30px;
-	margin-top: 15%;
+	margin-top: 12%;
 	font-family: Vonique;
 	word-spacing: 20px;
 
@@ -27,9 +27,16 @@ body{
 
 #menu{
 	text-align: center;
-	font-size: 50px;
 	color: white;
-	word-spacing: 30px;
+
+}
+
+.menuButton{
+	border: none;
+	background: none;
+	color: white;
+	width: 12%;
+	font-size: 50px;
 
 }
 
