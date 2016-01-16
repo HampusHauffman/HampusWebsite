@@ -1,0 +1,41 @@
+@font-face{
+	font-family: "Vonique";
+	src: url("KeepCalm-Medium.ttf");
+}
+
+body{
+	background-image: url("https://static.pexels.com/photos/1445/blur-river-blurred-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+#nameTitle{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	margin-top: 15%;
+	font-family: Vonique;
+	word-spacing: 20px;
+
+}
+
+#menu{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	word-spacing: 30px;
+
+}
+
+#menu ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#menu ul li{
+	display: inline;
+}
