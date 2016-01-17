@@ -5,6 +5,9 @@
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<link rel="shortcut icon" href="hIcon.ico">
+
+			<title>Hampus Hauffman</title>
 
 		</head>
 		<body>
@@ -19,7 +22,7 @@
 					  	</button></li>
 					  <li class = "menuItem">
 					  	<button class = "menuButton" id = "menuButton2" type = "button">
-					  		<spam class="fa fa-image"></spam>
+					  		<spam class="fa fa-gamepad"></spam>
 					  	</button></li>
 					  <li class = "menuItem">
 					  	<button class = "menuButton" id = "menuButton3" type = "button">
@@ -45,47 +48,31 @@
 					<div hidden class = "displayDiv" id = "homeDiv">
 						<h3></h3>
 						<p class = "textDisp" id = "homeText">
+							<h1 id = "titlText" align = "center">HOME</h1>
+							<img src="http://pngimg.com/upload/cat_PNG100.png" height = "100px" align = "right">
+							<h3 style = "display: inline;">Välkommen</h3>
 							 till min Hemsida. Här kan du se bilder jag laggt upp, Information om mig och mer om min kodning.
 							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-							upp, Information om mig och mer om min kodning.
-							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
+						
 						</p>
 					</div>
 					<div hidden class = "displayDiv" id = "imgDiv">
 						<p class = "textDisp" id = "imgText">
-							Welcome To img
+							<h1 id = "titleText" align = "center">GAME</h1>Welcome 
 						</p>
 					</div>
 					<div hidden class = "displayDiv" id = "infoDiv">
 						<p class = "textDisp" id = "infoText">
-							Welcome To info
+							<h1 id = "titleText" align = "center">INFO</h1>Welcome To info
 						</p>
 					</div>
 					<div hidden class = "displayDiv" id = "codeDiv">
 						<p class = "textDisp" id = "codeText">
-							
+							<h1 id = "titleText" align = "center">CODE</h1>
 						</p>
 					</div>
 
 				</div>
-				
-
 		</body>
 
 		<script>
@@ -108,7 +95,7 @@ var idDiv = $("#homeDiv");
 					}else if(menuButtonVar == "menuButton2"){
 						//var textDisp = $("#imgText").text();
 						var idDiv = $("#imgDiv");
-						$(".fa-image").css("color", "lightGrey").css("font-size", "42px");
+						$(".fa-gamepad").css("color", "lightGrey").css("font-size", "42px");
 
 					}else if(menuButtonVar == "menuButton3"){
 						//var textDisp = $("#infoText").text();

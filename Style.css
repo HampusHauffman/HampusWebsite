@@ -29,26 +29,11 @@ body{
 
 }
 
-.fa-home{
+.fa{
 	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
 
 }
-.fa-image{
-	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
 
-}
-.fa-info-circle{
-	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
-
-}
-.fa-code{
-	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
-
-}
-.fa-times-circle{
-	text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
-
-}
 
 #menu{
 	text-align: center;
@@ -68,7 +53,7 @@ body{
 	font-size: 50px;
 	min-width: 60px;
 
-}
+} button:focus {outline:0;}
 
 
 #menu ul{
@@ -109,8 +94,6 @@ body{
 	padding-top: 2%;
 }
 
-/* Här är alla ändringar för spam text*/
-
 .largeText{
 	font-size: 25px;
 	background-color: blue;
@@ -122,3 +105,10 @@ body{
 .displayDiv{
 	margin: 2%;
 }
+/* Här är alla ändringar för spam text*/
+
+#titleText{
+	font-style: Vonique;
+}
+
+
