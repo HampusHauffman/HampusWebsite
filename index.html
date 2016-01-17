@@ -41,30 +41,33 @@
 				</div>
 
 				<div class = "textDisp" id = "textField">
-					<p id = "loremIpsum">
 
-					</p>
+					<div hidden class = "displayDiv" id = "homeDiv">
+						<h3></h3>
+						<p class = "textDisp" id = "homeText">
+							 till min Hemsida. Här kan du se bilder jag laggt upp, Information om mig och mer om min kodning.
+							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
+							<img src="http://islamportalen.se/wp-content/uploads/2015/06/katt.jpg">
+						</p>
+					</div>
+					<div hidden class = "displayDiv" id = "imgDiv">
+						<p class = "textDisp" id = "imgText">
+							Welcome To img
+						</p>
+					</div>
+					<div hidden class = "displayDiv" id = "infoDiv">
+						<p class = "textDisp" id = "infoText">
+							Welcome To info
+						</p>
+					</div>
+					<div hidden class = "displayDiv" id = "codeDiv">
+						<p class = "textDisp" id = "codeText">
+							
+						</p>
+					</div>
 
 				</div>
-				<div id = "homeDiv">
-					<p class = "textDisp" id = "homeText">
-						<span class = "largeText" style = "	font-size: 25px;">Välkommen</span>
-						 till min Hemsida. Här kan du se bilder jag laggt upp, Information om mig och mer om min kodning.
-						Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kodning eller vad annat jag nu håller på med.
-						bajs
-					</p>
-				</div>
-				<p class = "textDisp" id = "imgText">
-					Welcome To img
-				</p>
-				<p class = "textDisp" id = "infoText">
-					Welcome To info
-				</p>
-				<p class = "textDisp" id = "codeText">
-					
-				</p>
-
-				<img src="http://butlerco.com.au/media/catalog/category/curtain-tie-backs_1.png" alt = "bajs" height = "42" width = "42">
+				
 
 		</body>
 
@@ -74,26 +77,34 @@
 			$("textField").slideUp(1);
 
 			$(".menuButton").on("click", function(){
+				
+			$(".menuButton spam").css("color", "white").css("font-size", "50px");
+
 				var menuButtonVar = $(this).attr("id");
 
 					if(menuButtonVar == "menuButton1"){
-						var textDisp = $("#homeText").text();
+						//var textDisp = $("#homeText").text();
+var idDiv = $("#homeDiv");
+						var idDiv = $("#homeDiv");
 						$(".fa-home").css("color", "lightGrey").css("font-size", "42px");
 
 					}else if(menuButtonVar == "menuButton2"){
-						var textDisp = $("#imgText").text();
+						//var textDisp = $("#imgText").text();
+						var idDiv = $("#imgDiv");
 						$(".fa-image").css("color", "lightGrey").css("font-size", "42px");
 
 					}else if(menuButtonVar == "menuButton3"){
-						var textDisp = $("#infoText").text();
+						//var textDisp = $("#infoText").text();
+						var idDiv = $("#infoDiv");
 						$(".fa-info-circle").css("color", "lightGrey").css("font-size", "42px");
 						
 					}else if(menuButtonVar == "menuButton4"){
-						var textDisp = $("#codeText").text();
+						//var textDisp = $("#codeText").text();
+						var idDiv = $("#codeDiv");
 						$(".fa-code").css("color", "lightGrey").css("font-size", "42px");
 						
 					}else if(menuButtonVar == "menuButton5"){
-						var textDisp = $("#stop").text();
+						//var textDisp = $("#stop").text();
 						$(".fa-times-circle").css("color", "lightGrey").css("font-size", "42px");
 						
 					}
@@ -102,14 +113,15 @@
 						$("#textField").slideUp(500);
 					} else{
 
+
 						$("#textField").slideUp(500, function(){
-							$("#loremIpsum").html(textDisp);
+							$(".displayDiv").hide();
+							$(idDiv).show();
 						})
 						
 						$("#textField").slideDown(500);
 
 						}
-					
 					
 
 			});

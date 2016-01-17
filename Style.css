@@ -65,8 +65,10 @@ body{
 	color: white;
 	width: 12%;
 	font-size: 50px;
+	min-width: 60px;
 
 }
+
 
 #menu ul{
 	list-style-type: none;
@@ -100,10 +102,10 @@ body{
 	max-height: 600px;
 }
 
+
 #loremIpsum{
-	margin: 4%;
+	margin: 1%;
 	padding-top: 2%;
-	padding-bottom: 2%;
 }
 
 /* Här är alla ändringar för spam text*/
@@ -112,7 +114,7 @@ body{
 	font-size: 25px;
 	background-color: blue;
 }
-
-.textDisp{
-	display: none;
+#showDiv{
+	background-color: blue;
 }
+
