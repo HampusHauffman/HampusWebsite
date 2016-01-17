@@ -8,7 +8,7 @@
 }
 
 body{
-	background-image: url("https://static.pexels.com/photos/1445/blur-river-blurred-background.jpg");
+	background-image: url("http://fewpict.com/images/blurry/blurry-05.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -104,4 +104,15 @@ body{
 	margin: 4%;
 	padding-top: 2%;
 	padding-bottom: 2%;
+}
+
+/* Här är alla ändringar för spam text*/
+
+.largeText{
+	font-size: 25px;
+	background-color: blue;
+}
+
+.textDisp{
+	display: none;
 }
