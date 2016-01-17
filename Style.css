@@ -12,6 +12,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	min-height: 100%;
 
 }
 
@@ -118,3 +119,6 @@ body{
 	background-color: blue;
 }
 
+.displayDiv{
+	margin: 2%;
+}
