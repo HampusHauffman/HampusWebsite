@@ -7,8 +7,9 @@
 	src: url("KeepCalm-Medium.ttf");
 }
 
+
 body{
-	background-image: url("http://fewpict.com/images/blurry/blurry-05.jpg");
+	background-image: url("BackgroundImg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -79,6 +80,7 @@ body{
 
 #textField{
 	font-size: 19px;
+    font-family: 'Roboto', sans-serif;
 	color: white;
 	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3));
 
