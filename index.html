@@ -45,58 +45,63 @@
 
 				<div class = "textDisp" id = "textField">
 
-					<div hidden class = "displayDiv" id = "homeDiv">
+					<div class="displayDiv" id="homeDiv" style="display: none;">
 						<h3></h3>
-						<p class = "textDisp" id = "homeText">
-							<h1 id = "titlText" align = "center">HOME</h1>
-							<h3 id = "titleText" align = "center"><spam class="fa fa-comment-o"></spam>Games</h3>
+
+						<p class="textDisp" id="homeText">
+							</p><h1 id="titlText" align="center">HOME</h1>
+							<h3 id="titleText" align="center"><spam class="fa fa-comment-o"></spam>Games</h3>
 							Välkommen till min Hemsida. Här kan du se spel jag gjort eller jobbar på, Information om mig och mer om min kodning.
 							Hampus.Hauffman.se är till för att du ska få en snabb upfattning om vad jag är för person vare sig om du har blivit hänvisad hit angående ett jobb eller om du intreserar dig av kod eller vad annat jag nu håller på med.
 							<br>
 							<br>
 							Jag går på gymnasiumet klara södra och har jobbat som servic, disk, dagisfröken men har många andra hobbies så som programering, illustrering och musikproduktion.
-						</p>
+
+						<p></p>
 					</div>
-					<div hidden class = "displayDiv" id = "imgDiv">
-						<p class = "textDisp" id = "imgText">
-							<h1 id = "titleText" align = "center">GAME</h1>
-							<!- notera att allt utom klassen fa-gamepad refereras till som img[något] -> 
-							<h3 id = "titleText" align = "center"><spam class="fa fa-keyboard-o"></spam>Games</h3>
+					<div class="displayDiv" id="imgDiv" style="display: none;">
+						<p class="textDisp" id="imgText">
+							</p><h1 id="titleText" align="center">GAME</h1>
+							<!--- notera att allt utom klassen fa-gamepad refereras till som img[något] --> 
+							<h3 id="titleText" align="center"><spam class="fa fa-keyboard-o"></spam>Games</h3>
+
 							jag är skaparen av spelet <a href="https://play.google.com/store/apps/details?id=com.HamCorp.CookieFlapp">CookieFlap</a> som var ett sätt för mig att värkligen ge mig in i programering.
 							Spelet tog C.a två månader att göra och resultera i att jag lärde mig hur man hanterar source controll, hur man bygger något från grunden och hur objekt orienterade språk fungerar. 
 							<br> 
 							<br>
-							<h3 id = "titleText" align = "center"><spam class="fa fa-gift"></spam>More Games</h3>
+
+							<h3 id="titleText" align="center"><spam class="fa fa-gift"></spam>More Games</h3>
 							Mitt nuvarande projekt är <a href="http://dimensionshifter.net/">DimensionShifter</a> som jag jobbar på med flera klasskamrater. Dimension shifter är ett betydligt större projekt och har värkligen lärt mig att jobba i grupp och gett mig tid att effektivt lära mig att lära hur man strukturerar större program.
-						</p>
+						<p></p>
 					</div>
-					<div hidden class = "displayDiv" id = "infoDiv">
-						<p class = "textDisp" id = "infoText">
-							<h1 id = "titleText" align = "center">INFO</h1>
-							<h3 id = "titleText" align = "center"><spam class="fa fa-bullhorn"></spam>Kontakta</h3>
+					<div class="displayDiv" id="infoDiv" style="display: none;">
+						<p class="textDisp" id="infoText">
+							</p><h1 id="titleText" align="center">INFO</h1>
+							<h3 id="titleText" align="center"><spam class="fa fa-bullhorn"></spam>Kontakta</h3>
 							jag är född 1997-02-16.
 							Du kan framförallt nå mig via min mail "Hampus@Hauffman.se".
-						</p>
+						<p></p>
 					</div>
-					<div hidden class = "displayDiv" id = "codeDiv">
-						<p class = "textDisp" id = "codeText">
-							<h3 id = "titleText" align = "center"><spam class="fa fa-terminal"></spam>Code</h3>
+					<div class="displayDiv" id="codeDiv" style="display: none;">
+						<p class="textDisp" id="codeText">
+							</p><h3 id="titleText" align="center"><spam class="fa fa-terminal"></spam>Code</h3>
 							Jag har programerat sedan jag var 15 och har över grundläggnade kunskaper i Java, C++, C# och kan HTML, CSS, Jquery och Git på en bättre nivå.
 							<br>
 							<br>
-							<h3 id = "titleText" align = "center"><spam class="fa fa-tasks"></spam> Hemsidan</h3>
+							<h3 id="titleText" align="center"><spam class="fa fa-tasks"></spam> Hemsidan</h3>
+
 							 Hemsidan är skriven i HTML5, CSS3 och använder Jquery. Allt är byggt från grunden och allt som allt tog det cirka en helg att designa och anpassa hemsidan.
 							 Hemsidan använder sig av Jquery för att ge den dess olika funktioner och CSS3 för att allt ska se så fint ut
 							<br>
 							<br>
-							<h3 id = "titleText" align = "center"><spam class="fa fa-gear"></spam> CookieFlap</h3>
+
+							<h3 id="titleText" align="center"><spam class="fa fa-gear"></spam> CookieFlap</h3>
 							 Som refererat i "game" fliken har jag skapat spelet <a href="https://play.google.com/store/apps/details?id=com.HamCorp.CookieFlapp">CookieFlap</a> villket nu(2015-01-18) har över 200 nedladningar. 
 							<br> 
 							CookieFlap var gjort i Unity med C#. Spelet följer en simpel struktur men använder sig av svårare komponenter som sparning och skärmstorleksanpassning. Spelet var gjort självmant eftersom jag ville lära mig grundläggande speldesign. Det tog ungefär 1-2 månader att göra och detta utan några tidigare kunskaper i Unity eller C#.
 
 
-
-						</p>
+						<p></p>
 					</div>
 
 				</div>
@@ -115,7 +120,6 @@
 
 					if(menuButtonVar == "menuButton1"){
 						//var textDisp = $("#homeText").text();
-var idDiv = $("#homeDiv");
 						var idDiv = $("#homeDiv");
 						$(".fa-home").css("color", "lightGrey").css("font-size", "42px");
 
