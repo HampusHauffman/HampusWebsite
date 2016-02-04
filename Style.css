@@ -87,7 +87,7 @@ body{
 	max-width: 640px;
 	margin: auto; 
 	overflow-y: auto;
-	max-height: 600px;
+	margin-bottom: 40px;
 }
 
 

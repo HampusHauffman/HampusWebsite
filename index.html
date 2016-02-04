@@ -45,7 +45,7 @@
 
 				<div class = "textDisp" id = "textField">
 
-					<div hidden="" class="displayDiv" id="homeDiv" style="display: none;">
+					<div class="displayDiv" id="homeDiv" style="display: none;">
 						<h3></h3>
 						<p class="textDisp" id="homeText">
 							</p><h1 id="titlText" align="center">HOME</h1>
@@ -57,7 +57,7 @@
 							Jag går på gymnasiumet klara södra och har jobbat som servic, disk, dagisfröken men har många andra hobbies så som programering, illustrering och musikproduktion.
 						<p></p>
 					</div>
-					<div hidden="" class="displayDiv" id="imgDiv" style="display: none;">
+					<div class="displayDiv" id="imgDiv" style="display: none;">
 						<p class="textDisp" id="imgText">
 							</p><h1 id="titleText" align="center">GAME</h1>
 							<!--- notera att allt utom klassen fa-gamepad refereras till som img[något] ---> 
@@ -70,7 +70,7 @@
 							Mitt nuvarande projekt är <a href="http://dimensionshifter.net/">DimensionShifter</a> som jag jobbar på med flera klasskamrater. Dimension shifter är ett betydligt större projekt och har värkligen lärt mig att jobba i grupp och gett mig tid att effektivt lära mig att lära hur man strukturerar större program.
 						<p></p>
 					</div>
-					<div hidden="" class="displayDiv" id="infoDiv" style="display: none;">
+					<div class="displayDiv" id="infoDiv" style="display: none;">
 						<p class="textDisp" id="infoText">
 							</p><h1 id="titleText" align="center">INFO</h1>
 							<h3 id="titleText" align="center"><spam class="fa fa-bullhorn"></spam>Kontakta</h3>
@@ -78,7 +78,7 @@
 							Du kan framförallt nå mig via min mail "Hampus@Hauffman.se".
 						<p></p>
 					</div>
-					<div hidden="" class="displayDiv" id="codeDiv" style="display: block;">
+					<div class="displayDiv" id="codeDiv" style="display: none;">
 						<p class="textDisp" id="codeText">
 							</p><h3 id="titleText" align="center"><spam class="fa fa-terminal"></spam>Code</h3>
 							Jag har programerat sedan jag var 15 och har över grundläggnade kunskaper i Java, C++, C# och kan HTML, CSS, Jquery och Git på en bättre nivå.
@@ -113,7 +113,6 @@
 
 					if(menuButtonVar == "menuButton1"){
 						//var textDisp = $("#homeText").text();
-var idDiv = $("#homeDiv");
 						var idDiv = $("#homeDiv");
 						$(".fa-home").css("color", "lightGrey").css("font-size", "42px");
 
